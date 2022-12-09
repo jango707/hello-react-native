@@ -1,9 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-const ColorBox = ({ color }) => {
+const ColorBox = ({ colorName, hexCode }) => {
   return (
-    <View style={[styles.container, { backgroundColor: color }]}>
-      <Text>Color: {color}</Text>
+    <View style={[styles.container, { backgroundColor: hexCode }]}>
+      <Text>
+        {colorName}: {hexCode}
+      </Text>
     </View>
   );
 };
